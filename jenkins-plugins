@@ -7,3 +7,4 @@ docker-build-step
 dockerhub-notification
 oauth-credentials
 configuration-as-code
+nodejs

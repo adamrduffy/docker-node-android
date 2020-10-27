@@ -9,3 +9,7 @@ tool:
     installations:
     - home: "/usr/local/openjdk-8"
       name: "openjdk-8"
+  nodejs:
+    installations:
+    - home: "/root/.nvm/versions/node/v12.6.0"
+      name: "node-v12-6-0"
