@@ -36,6 +36,7 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager --update
 RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSION}" \
     "platforms;android-${ANDROID_VERSION}" \
     "platform-tools"
+ENV PATH="${ANDROID_HOME}/build-tools/${ANDROID_BUILD_TOOLS_VERSION}/:${PATH}"
 
 # install gradle
 ENV GRADLE_URL="https://services.gradle.org/distributions/gradle-4.10.3-bin.zip"
