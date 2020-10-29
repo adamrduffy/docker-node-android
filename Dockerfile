@@ -82,10 +82,6 @@ RUN ssh-keygen -f /root/.ssh/id_rsa -t rsa -N ''
 # allows to skip Jenkins setup wizard
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
-# Jenkins runs all grovy files from init.groovy.d dir
-# use this for creating default admin user
-COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
-
 # Jenkins configuration-as-code file
 COPY casc.yaml /var/jenkins_home/casc.yaml
 
